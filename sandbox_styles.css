@@ -1,0 +1,184 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:  0;
+  padding:  0;
+
+}
+
+:root {
+	--text-color-real: rgb(255, 0, 0);
+	--ff-body: 'Open Sans', sans-serif;
+	--fw: 900
+
+} 
+
+h1 {
+    font-size: 3rem;
+}
+
+body {
+	background-color:  rgb(40, 20, 95);
+	margin: 1rem;
+	color: rgb(255, 255, 255);
+	font-family: var(--ff-body);
+    line-height: 1.6;
+}
+/* .one-container {
+    grid-column: span 3;
+} */
+
+/* .six-container {
+    grid-column-start: 4;
+    grid-row: 1 / 4;
+} */
+
+.wrapper {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+    "one"
+    "two"
+    "three" 
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight"
+    "nine"; 
+    gap: 1em;
+    padding-block: 2rem;
+    margin-inline: auto;
+    filter: drop-shadow(2px 2px 5px  rgba(0, 0, 0, .3) );
+    /* box-shadow: 5px 5px 5px  rgba(0, 0, 0, 1) */
+}
+
+.wrapper > * {
+    padding: .8em;
+}
+
+.one-container {
+    grid-area: one;
+}
+.two-container {
+    grid-area: two;
+}
+.three-container {
+    grid-area: three;
+}
+.four-container {
+    grid-area: four;
+}
+.five-container {
+    grid-area: five;
+}
+.six-container {
+    grid-area: six;
+}
+.seven-container {
+    grid-area: seven;
+}
+.eight-container {
+    grid-area: eight;
+}
+.nine-container {
+    grid-area: nine;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.hover:hover {
+    opacity: .9;
+    transition: opacity ease-in-out;
+}
+
+
+@media screen and (min-width: 38em) {
+    .wrapper {
+      grid-template-areas:
+       'one one'
+       'two two'
+       'three four'
+       'five six'
+       'seven seven'
+       "eight nine";
+    }
+  }
+
+@media screen and (min-width: 54em) {
+    .wrapper {
+    grid-template-areas:
+    "one one two two"
+    "three four two two"
+    "five six seven seven"
+    "eight nine"; 
+    }
+}
+
+@media screen and (min-width: 75em) {
+    .wrapper {
+    grid-template-columns: repeat(3,1fr) 15%;
+    grid-template-areas:
+    "one one one two"
+    "three four four two"
+    "five six seven two"
+    "eight eight nine nine";
+    }
+    
+}
+
+.one-container {
+    background: linear-gradient(to top right, rgb(35, 143, 71) , rgb(66, 190, 29));
+}
+.two-container {
+    background: linear-gradient(to top right, rgb(219, 76, 88), rgb(255, 100, 113));
+}
+.three-container {
+    background: linear-gradient(to top right, rgb(224, 110, 3), rgb(255, 123, 0));
+}
+.four-container {
+    background: linear-gradient(to top right, rgb(109, 130, 196),rgb(109, 139, 196));
+}
+.five-container {
+    background: linear-gradient(to top right, rgb(0, 122, 223), rgb(0, 140, 255));
+}
+.six-container {
+    background: linear-gradient(to top right, rgb(255, 0, 200), rgb(234, 0, 255));
+}
+.seven-container {
+    background: linear-gradient(to top right, rgb(85, 50, 151), rgb(105, 78, 204));
+}
+.eight-container {
+    background: linear-gradient(to top right, rgb(219, 76, 88), rgb(255, 100, 113));
+}
+.nine-container {
+    background: linear-gradient(to top right, rgb(0, 122, 223), rgb(0, 140, 255));
+}
+
+
+.customColor1 {
+    background: red;
+}
+
+.customColor2 {
+    background: rgb(0, 119, 255);
+}
+
+.customColor3 {
+    background: rgb(136, 11, 125);
+}
+
+.customColor4 {
+    background: rgb(90, 158, 107);
+}
+
+.customColor5 {
+    background: rgb(12, 186, 255);
+}
+
+.customColor6 {
+    background: rgb(255, 110, 135);
+}
