@@ -11,24 +11,38 @@ const paraNine = document.querySelector(".nine-container")
 
 paraOne.addEventListener("click", () => {
     paraOne.classList.toggle("customColor1");
-    });
+});
 
 paraTwo.addEventListener("click", () => {
-    paraTwo.classList.toggle("customColor5");
-
-    });
+    paraTwo.classList.toggle("customColor2");
+});
 
 paraThree.addEventListener("click", () => {
-    paraThree.classList.toggle("customColor2");
-    });
+    paraThree.classList.toggle("customColor3");
+});
 
 paraFour.addEventListener("click", () => {
     paraFour.classList.toggle("customColor4");
-    });
+});
 
 paraFive.addEventListener("click", () => {
     paraFive.classList.toggle("customColor5");
-    });
+});
 
+paraSix.addEventListener("click", () => {
+    paraSix.classList.toggle("customColor6");
+});
+
+paraSeven.addEventListener("click", () => {
+    paraSeven.classList.toggle("customColor7");
+});
+
+paraEight.addEventListener("click", () => {
+    paraEight.classList.toggle("customColor8");
+});
+
+paraNine.addEventListener("click", () => {
+    paraNine.classList.toggle("customColor9");
+});
 
     //make selection random

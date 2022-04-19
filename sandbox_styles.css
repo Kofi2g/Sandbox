@@ -176,9 +176,23 @@ body {
 }
 
 .customColor5 {
-    background: rgb(12, 186, 255);
+    background: rgb(252, 93, 61);
 }
 
 .customColor6 {
-    background: rgb(255, 110, 135);
+    background: rgb(54, 5, 168);
+}
+
+.customColor7 {
+    background: rgb(106, 255, 0);
+    color: black;
+}
+
+.customColor8 {
+    background: rgb(255, 213, 0);
+    color: black;
+}
+
+.customColor9 {
+    background: rgb(255, 0, 132);
 }
