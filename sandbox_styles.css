@@ -8,7 +8,8 @@
 }
 
 :root {
-	--text-color-real: rgb(255, 0, 0);
+	--sand-primary: rgb(230, 230, 176);
+    --sand-secondary: rgb(90, 215, 171);
 	--ff-body: 'Open Sans', sans-serif;
 	--fw: 900
 } 
@@ -23,20 +24,12 @@ h2 {
 
 body {
     font-size: clamp(1rem,2.2vh,2rem);
-	background-color:  rgb(40, 20, 95);
+	background-color: rgb(90, 215, 171);
 	margin: 1rem;
 	color: rgb(255, 255, 255);
 	font-family: var(--ff-body);
     line-height: 1.6;
 }
-/* .one-container {
-    grid-column: span 3;
-} */
-
-/* .six-container {
-    grid-column-start: 4;
-    grid-row: 1 / 4;
-} */
 
 .wrapper {
     display: grid;

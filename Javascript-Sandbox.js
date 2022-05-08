@@ -8,41 +8,23 @@ const paraSeven = document.querySelector(".seven-container")
 const paraEight = document.querySelector(".eight-container")
 const paraNine = document.querySelector(".nine-container")
 
+const handleParaElements = (element, number) => {
+    element.addEventListener("click", () => {
+        element.classList.toggle(`customColor${number}`);
+    });
+}
 
-paraOne.addEventListener("click", () => {
-    paraOne.classList.toggle("customColor1");
-});
+handleParaElements(paraOne,1);
+handleParaElements(paraTwo,2);
+handleParaElements(paraThree,3);
+handleParaElements(paraFour,4);
+handleParaElements(paraFive,5);
+handleParaElements(paraSix,6);
+handleParaElements(paraSeven,7);
+handleParaElements(paraEight,8);
+handleParaElements(paraNine,9);
 
-paraTwo.addEventListener("click", () => {
-    paraTwo.classList.toggle("customColor2");
-});
-
-paraThree.addEventListener("click", () => {
-    paraThree.classList.toggle("customColor3");
-});
-
-paraFour.addEventListener("click", () => {
-    paraFour.classList.toggle("customColor4");
-});
-
-paraFive.addEventListener("click", () => {
-    paraFive.classList.toggle("customColor5");
-});
-
-paraSix.addEventListener("click", () => {
-    paraSix.classList.toggle("customColor6");
-});
-
-paraSeven.addEventListener("click", () => {
-    paraSeven.classList.toggle("customColor7");
-});
-
-paraEight.addEventListener("click", () => {
-    paraEight.classList.toggle("customColor8");
-});
-
-paraNine.addEventListener("click", () => {
-    paraNine.classList.toggle("customColor9");
-});
-
-    //make selection random
+paraOne.addEventListener("click", (e) => {
+    paraOne.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},10)`;
+    console.log(e.offsetX, e.offsetY);
+})
